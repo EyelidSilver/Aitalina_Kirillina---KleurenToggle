@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>🧐Toggle Menu🧐</title>
+  <script defer src="/script.js"></script>
+  <link rel="stylesheet" href="/reset.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <nav class="nav-main">
+    <div class="btn-toggle-menu" onmouseenter="toggleNav()" onmouseleave="toggleNav()">
+      <aside class="nav-sidebar">
+        <ul onclick="closeMenu()" class="form">
+          <li onclick="document.getElementById('home').checked ='checked'">
+            <a class="home" href="#"> <input type="radio" class="radioBtn" id="home" name="radioBtn"> Home
+            </a>
+          </li>
+          <li onclick="document.getElementById('red').checked ='checked'"><a class="red" href="#"><input type="radio"
+                class="radioBtn" id="red" name="radioBtn"> Red
+
+            </a></li>
+          <li onclick="document.getElementById('orange').checked ='checked'"><a class="orange" href="#"> <input
+                type="radio" class="radioBtn" id="orange" name="radioBtn"> Orange
+
+            </a></li>
+          <li onclick="document.getElementById('purple').checked ='checked'"><a class="purple" href="#"> <input
+                type="radio" class="radioBtn" id="purple" name="radioBtn"> Purple
+
+            </a></li>
+          <li onclick="document.getElementById('green').checked ='checked'"><a class="green" href="#"> <input
+                type="radio" class="radioBtn" id="green" name="radioBtn">
+              Green
+
+            </a></li>
+        </ul>
+      </aside>
+    </div>
+  </nav>
+
+  <div>
+    <p id="display">
+      GRAYBLUE
+    </p>
+  </div>
+</body>
+
+</html>
